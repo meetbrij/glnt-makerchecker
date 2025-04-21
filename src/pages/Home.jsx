@@ -45,7 +45,7 @@ const Home = () => {
       // Call the edge function via supabase.functions.invoke
       const { data, error: functionError } = await supabase.functions.invoke('send-glnt-lead-email', {
         body: {
-          to: 'meetbrij@gmail.com',
+          to: 'nmarfatia@glnt.asia',
           subject: 'New Lead from GLNT Landing Page',
           html: `
             <h2>New Lead Details</h2>
@@ -87,7 +87,7 @@ const Home = () => {
           </p>
           <button
             onClick={scrollToForm}
-            className="bg-sky-600 hover:bg-blue-700 text-white px-6 py-3 rounded text-bold"
+            className="bg-white hover:bg-gray-300 text-sky-700 px-6 py-3 rounded text-bold"
           >
             Register Interest
           </button>
